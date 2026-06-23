@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="SkillCraft Technology - Modern & Professional SaaS Landing Page. Build your digital solutions with speed and premium design.">
+    <title>SkillCraft Technology | Premium SaaS Solutions & Digital Product Landing Page</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Fixed Navbar -->
+    <header class="navbar-container">
+        <div class="container navbar-wrapper">
+            <!-- Logo -->
+            <a href="#home" class="logo">
+                <span class="logo-icon"><i data-lucide="layers"></i></span>
+                <span class="logo-text">SkillCraft</span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Navigation Controls (Dark Mode Toggle + CTA) -->
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                    <i data-lucide="moon" class="moon-icon"></i>
+                    <i data-lucide="sun" class="sun-icon"></i>
+                </button>
+                <a href="#contact" class="btn btn-primary btn-nav-cta">Get Started</a>
+                <button class="hamburger-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay Drawer -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#services" class="mobile-nav-link">Services</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <a href="#contact" class="btn btn-primary mobile-cta">Get Started</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content reveal-fade">
+                    <h1 class="hero-title">
+                        Digital Solutions <span class="gradient-text">For Scaling Teams</span>
+                    </h1>
+                    <p class="hero-description">
+                        Deploy scalable, secure, and modern platforms with our professional suite of web, cloud, and consulting services. Elevate your project starting today.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary btn-icon">
+                            Start Building Now
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat-item">
+                            <span class="stat-num">99.9%</span>
+                            <span class="stat-lbl">Uptime SLA</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat-item">
+                            <span class="stat-num">150+</span>
+                            <span class="stat-lbl">Projects Delivered</span>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat-item">
+                            <span class="stat-num">3x</span>
+                            <span class="stat-lbl">Development Velocity</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-fade">
+                    <div class="hero-illustration-wrapper">
+                        <!-- Floating Glass Cards & SVG Graphics -->
+                        <div class="floating-card card-top">
+                            <div class="card-icon blue"><i data-lucide="trending-up"></i></div>
+                            <div>
+                                <p class="card-title">Analytics</p>
+                                <p class="card-value">+148%</p>
+                            </div>
+                        </div>
+                        <div class="floating-card card-bottom">
+                            <div class="card-icon gold"><i data-lucide="zap"></i></div>
+                            <div>
+                                <p class="card-title">Performance</p>
+                                <p class="card-value">99/100</p>
+                            </div>
+                        </div>
+                        <!-- Core SaaS SVG Representation -->
+                        <svg class="hero-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="svg-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#2563EB" />
+                                    <stop offset="100%" stop-color="#FACC15" />
+                                </linearGradient>
+                                <linearGradient id="svg-grad-2" x1="0%" y1="100%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#1E40AF" stop-opacity="0.2" />
+                                    <stop offset="100%" stop-color="#FACC15" stop-opacity="0.8" />
+                                </linearGradient>
+                            </defs>
+                            <!-- Background grids -->
+                            <circle cx="250" cy="250" r="220" stroke="var(--svg-grid)" stroke-dasharray="8 8" stroke-width="1.5" />
+                            <circle cx="250" cy="250" r="150" stroke="var(--svg-grid)" stroke-width="1" />
+                            <circle cx="250" cy="250" r="80" stroke="var(--svg-grid)" stroke-dasharray="4 4" stroke-width="1" />
+                            
+                            <!-- Main Core Glow -->
+                            <circle cx="250" cy="250" r="40" fill="url(#svg-grad-1)" filter="drop-shadow(0px 8px 24px rgba(37, 99, 235, 0.4))" />
+                            <path d="M242 238L258 262M258 238L242 262" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                            
+                            <!-- Orbiting Node Lines -->
+                            <line x1="250" y1="250" x2="380" y2="180" stroke="var(--svg-line)" stroke-width="2" />
+                            <line x1="250" y1="250" x2="140" y2="160" stroke="var(--svg-line)" stroke-width="2" />
+                            <line x1="250" y1="250" x2="160" y2="340" stroke="var(--svg-line)" stroke-width="2" />
+                            <line x1="250" y1="250" x2="320" y2="360" stroke="var(--svg-line)" stroke-width="2" />
+                            
+                            <!-- Nodes -->
+                            <circle cx="380" cy="180" r="14" fill="#FACC15" />
+                            <circle cx="140" cy="160" r="12" fill="#2563EB" />
+                            <circle cx="160" cy="340" r="16" fill="url(#svg-grad-2)" />
+                            <circle cx="320" cy="360" r="10" fill="#1E40AF" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-fade">
+                    <span class="section-tagline">About SkillCraft</span>
+                    <h2 class="section-title">We build digital systems that fuel business growth</h2>
+                    <p class="section-subtitle">Combining cutting-edge development paradigms with top-tier product aesthetics, we enable startups and enterprises to launch production-ready systems.</p>
+                </div>
+                
+                <div class="about-content-grid">
+                    <div class="about-info reveal-fade">
+                        <h3>Our Philosophy</h3>
+                        <p>We believe technology should empower, not complicate. We design systems utilizing modern codebases, serverless architecture, and beautiful responsive layouts. Every pixel is tailored to align with business requirements and enhance user conversion.</p>
+                        <ul class="about-features">
+                            <li>
+                                <span class="feature-icon"><i data-lucide="check"></i></span>
+                                <span>High-performance architectures with React, Next.js, and ES6+ JS</span>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i data-lucide="check"></i></span>
+                                <span>Tailored UI/UX focusing on usability, metrics, and premium visuals</span>
+                            </li>
+                            <li>
+                                <span class="feature-icon"><i data-lucide="check"></i></span>
+                                <span>Cloud deployment automation via AWS, Vercel, and Cloudflare</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-metrics-grid reveal-fade">
+                        <div class="metric-card">
+                            <span class="metric-icon"><i data-lucide="users"></i></span>
+                            <h4 class="metric-num">50+</h4>
+                            <p class="metric-title">Collaborations</p>
+                            <p class="metric-desc">Partnerships with scaling tech leaders worldwide.</p>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-icon"><i data-lucide="award"></i></span>
+                            <h4 class="metric-num">12+</h4>
+                            <p class="metric-title">Industry Awards</p>
+                            <p class="metric-desc">Recognized for visual design and code craftsmanship.</p>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-icon"><i data-lucide="globe"></i></span>
+                            <h4 class="metric-num">24/7</h4>
+                            <p class="metric-title">Support Desk</p>
+                            <p class="metric-desc">Ensuring uptime, updates, and maintenance schedules.</p>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-icon"><i data-lucide="clock"></i></span>
+                            <h4 class="metric-num">100%</h4>
+                            <p class="metric-title">On-Time Delivery</p>
+                            <p class="metric-desc">Agile milestones tracking projects to completion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <div class="section-header reveal-fade">
+                    <span class="section-tagline">Our Services</span>
+                    <h2 class="section-title">Tailored services for digital excellence</h2>
+                    <p class="section-subtitle">We design and deliver robust digital products tailored to modern web and enterprise standards.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card reveal-fade">
+                        <div class="service-icon"><i data-lucide="monitor"></i></div>
+                        <h3 class="service-title">Web Application Development</h3>
+                        <p class="service-description">Scalable, responsive web apps using modern frameworks (Next.js, Vue) and clean frontend architecture. Focused on high-speed user experience.</p>
+                        <a href="#contact" class="service-link">Learn more <i data-lucide="chevron-right"></i></a>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card reveal-fade">
+                        <div class="service-icon"><i data-lucide="figma"></i></div>
+                        <h3 class="service-title">UI/UX & Product Design</h3>
+                        <p class="service-description">Bespoke product designs mapping journey flows, wireframes, and high-fidelity mockups. Creating elegant digital aesthetics aligned with your brand.</p>
+                        <a href="#contact" class="service-link">Learn more <i data-lucide="chevron-right"></i></a>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card reveal-fade">
+                        <div class="service-icon"><i data-lucide="cloud-lightning"></i></div>
+                        <h3 class="service-title">Cloud Infrastructure & DevOps</h3>
+                        <p class="service-description">Setup CI/CD pipelines, AWS/GCP architecture, infrastructure as code, and automated security scanning to ensure 99.9% uptime compliance.</p>
+                        <a href="#contact" class="service-link">Learn more <i data-lucide="chevron-right"></i></a>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="service-card reveal-fade">
+                        <div class="service-icon"><i data-lucide="line-chart"></i></div>
+                        <h3 class="service-title">Digital Strategy & Growth</h3>
+                        <p class="service-description">Optimizing conversion metrics, SEO compliance, speed optimizations, and data integrations to turn website visitors into loyal paying customers.</p>
+                        <a href="#contact" class="service-link">Learn more <i data-lucide="chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-layout-grid">
+                    <div class="contact-info-panel reveal-fade">
+                        <span class="section-tagline">Contact Us</span>
+                        <h2 class="section-title">Ready to launch your project?</h2>
+                        <p class="contact-panel-desc">Get in touch with our solutions engineers. Let's discuss your design, timeline, and requirements to deliver a top-tier product.</p>
+                        
+                        <div class="contact-detail-items">
+                            <div class="detail-item">
+                                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                                <div>
+                                    <p class="detail-label">Email Us</p>
+                                    <a href="mailto:hello@skillcrafttech.com" class="detail-val">hello@skillcrafttech.com</a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon"><i data-lucide="phone"></i></div>
+                                <div>
+                                    <p class="detail-label">Call Support</p>
+                                    <a href="tel:+18005550199" class="detail-val">+1 (800) 555-0199</a>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                                <div>
+                                    <p class="detail-label">Office Address</p>
+                                    <p class="detail-val">100 Pine Street, San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-wrapper">
+                            <a href="#" class="social-link-btn" aria-label="Follow us on Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" class="social-link-btn" aria-label="Follow us on GitHub"><i data-lucide="github"></i></a>
+                            <a href="#" class="social-link-btn" aria-label="Follow us on LinkedIn"><i data-lucide="linkedin"></i></a>
+                            <a href="#" class="social-link-btn" aria-label="Follow us on Instagram"><i data-lucide="instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-panel reveal-fade">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="form-name" class="form-label">Full Name</label>
+                                    <input type="text" id="form-name" class="form-input" placeholder="e.g., Jane Doe" required>
+                                    <span class="form-error-msg" id="name-error">Please enter your full name.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email" class="form-label">Email Address</label>
+                                    <input type="email" id="form-email" class="form-input" placeholder="e.g., jane@company.com" required>
+                                    <span class="form-error-msg" id="email-error">Please enter a valid email address.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <input type="text" id="form-subject" class="form-input" placeholder="e.g., Web App Development Project" required>
+                                <span class="form-error-msg" id="subject-error">Please enter a subject.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <textarea id="form-message" class="form-input form-textarea" placeholder="Tell us more about your project goals, timelines, and features..." required></textarea>
+                                <span class="form-error-msg" id="message-error">Please write your message description.</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit btn-icon">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                            
+                            <div id="form-success-toast" class="form-success-toast">
+                                <span class="toast-icon"><i data-lucide="check-circle-2"></i></span>
+                                <div>
+                                    <p class="toast-title">Message Sent!</p>
+                                    <p class="toast-desc">Thank you. Our team will contact you shortly.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-top-grid">
+            <div class="footer-brand-col">
+                <a href="#home" class="logo">
+                    <span class="logo-icon"><i data-lucide="layers"></i></span>
+                    <span class="logo-text">SkillCraft</span>
+                </a>
+                <p class="footer-brand-desc">Constructing beautiful web infrastructure, modern user flows, and enterprise server-side solutions designed to scale.</p>
+            </div>
+            
+            <div class="footer-links-col">
+                <p class="footer-title">Platform</p>
+                <nav class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                </nav>
+            </div>
+            
+            <div class="footer-links-col">
+                <p class="footer-title">Company</p>
+                <nav class="footer-links">
+                    <a href="#contact">Careers</a>
+                    <a href="#about">Press Kit</a>
+                    <a href="#contact">Contact Support</a>
+                    <a href="#about">Partnerships</a>
+                </nav>
+            </div>
+            
+            <div class="footer-links-col">
+                <p class="footer-title">Legal</p>
+                <nav class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie settings</a>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-wrapper">
+                <p class="copyright-text">&copy; 2026 SkillCraft Technology Inc. All rights reserved.</p>
+                <div class="footer-bottom-socials">
+                    <a href="#" class="footer-social-icon" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="#" class="footer-social-icon" aria-label="GitHub"><i data-lucide="github"></i></a>
+                    <a href="#" class="footer-social-icon" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
